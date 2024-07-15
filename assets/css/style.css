@@ -200,6 +200,14 @@ main {
         color: #3a3a3a;
     }
 
+/*large or landscape phones*/
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 @media screen and (min-width: 768px) {
     /*header*/
     nav {
@@ -255,6 +263,10 @@ main {
         text-align: end;
         align-self: flex-end;
     }
+
+    #photos {
+        column-count: 3;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -262,6 +274,9 @@ main {
         border-bottom: 1px solid #3a3a3a;
     }
     
+    #photos {
+        column-count: 4;
+    }
 }
 
 @media screen and (min-width: 1200px) {
